@@ -8,11 +8,22 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1128px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 240px;
+  transition: all 400ms ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  cursor: url("../img/cursor.svg"), pointer;
+}
