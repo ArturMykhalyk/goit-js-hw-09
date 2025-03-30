@@ -27,3 +27,7 @@
   transform: scale(1.05);
   cursor: url("../img/cursor.svg"), pointer;
 }
+
+.has-lightbox {
+  background-color: rgba(22, 238, 40, 0.4);
+}

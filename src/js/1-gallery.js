@@ -87,3 +87,10 @@ const markup = images
   .join('');
 
 gallery.insertAdjacentHTML('afterbegin', markup);
+
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250,
+  showCounter: false,
+});
